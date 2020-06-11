@@ -1,10 +1,13 @@
 " {{{ bundle-coc.vim 
+
 if exists('g:loaded_bundle_coc')
   finish
 endif
 let g:loaded_bundle_coc=1
+
 " -------------------------------------------------------------------------- }}}
 " {{{ coc-vim : Language Server Protocol 
+
 function! s:check_back_space() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~ '\s'
@@ -16,4 +19,8 @@ inoremap <silent><expr> <TAB>
   \ coc#refresh()
 
 nnoremap gD <Plug>(coc-definition)
+
+" Disable nodejs upgrade warning.
+let g:coc_disable_startukp_warning = 1
+
 " -------------------------------------------------------------------------- }}}
