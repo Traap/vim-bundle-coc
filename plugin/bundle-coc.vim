@@ -21,6 +21,6 @@ inoremap <silent><expr> <TAB>
 nnoremap gD <Plug>(coc-definition)
 
 " Disable nodejs upgrade warning.
-let g:coc_disable_startukp_warning = 1
+let g:coc_disable_startup_warning = 1
 
 " -------------------------------------------------------------------------- }}}
